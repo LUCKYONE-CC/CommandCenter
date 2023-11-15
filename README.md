@@ -13,11 +13,11 @@ The CommandRegistry library simplifies the implementation and management of comm
 
 ### Installation
 
+You can download the CommandCenter library from releases, NuGet or build it yourself:
+
 ```bash
 dotnet add package CommandCenter
 ```
-
-You can download the CommandCenter library from releases or build it yourself:
 
 ## Usage
 ### 1. Create a commandHandler:
