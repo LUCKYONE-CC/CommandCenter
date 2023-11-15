@@ -1,4 +1,4 @@
-# CommandRegistry Library
+# CommandCenter Library
 
 The CommandRegistry library simplifies the implementation and management of commands in applications. This library allows developers to register, describe, and execute commands easily. The registry approach facilitates the integration of new commands, enhancing the flexibility and extensibility of applications.
 
