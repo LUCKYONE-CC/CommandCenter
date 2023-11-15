@@ -16,7 +16,7 @@ The CommandRegistry library simplifies the implementation and management of comm
 You can download the CommandCenter library from releases, NuGet or build it yourself:
 
 ```bash
-dotnet add package CommandCenter
+NuGet\Install-Package CommandCenter
 ```
 
 ## Usage
