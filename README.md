@@ -33,7 +33,28 @@ You can download the CommandRegistry library from releases or build it yourself:
       .Build());
 ```
 
-### 3. Process Commands:
+### 3. Add Parameters to command:
+```csharp
+    commandProcessor.AddCommand(new CommandBuilder("inject")
+        .SetDescription("Description")
+        .WithParameter("n", "Description for n")
+        .SetAction(parameters =>
+        {
+            string n = parameters.GetParameterValue("n");
+
+            if (n != null)
+            {
+                DoSomething(n);
+            }
+            else
+            {
+                Console.WriteLine("Missing parameters for the 'n' command. Use -n");
+            }
+        })
+        .Build());
+```
+
+### 4. Process Commands:
 ```csharp
   while (true)
   {
