@@ -16,14 +16,14 @@ The CommandRegistry library simplifies the implementation and management of comm
 You can download the CommandRegistry library from releases or build it yourself:
 
 ## Usage
-### 1. Create a CommandCenter:
+### 1. Create a commandHandler:
 ```csharp
-  var commandProcessor = new CommandProcessor();
+  var commandHandler = new CommandHandler();
 ```
 
 ### 2. Add Commands:
 ```csharp
-  commandProcessor.AddCommand(new CommandBuilder("example")
+  commandHandler.AddCommand(new CommandBuilder("example")
       .SetDescription("Example command")
       .SetAction(parameters =>
       {
@@ -39,6 +39,6 @@ You can download the CommandRegistry library from releases or build it yourself:
   {
       Console.Write("Enter a command: ");
       string input = Console.ReadLine();
-      commandProcessor.ProcessCommand(input);
+      commandHandler.ProcessCommand(input);
   }
 ```
