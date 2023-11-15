@@ -3,7 +3,7 @@ using CommandCenter.Models;
 
 namespace CommandCenter
 {
-    public class CommandCenter
+    public class CommandHandler
     {
         private Dictionary<string, Command> commands = new Dictionary<string, Command>();
 
