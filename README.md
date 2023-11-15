@@ -35,7 +35,7 @@ You can download the CommandRegistry library from releases or build it yourself:
 
 ### 3. Add Parameters to command:
 ```csharp
-    commandProcessor.AddCommand(new CommandBuilder("inject")
+    commandProcessor.AddCommand(new CommandBuilder("dosome")
         .SetDescription("Description")
         .WithParameter("n", "Description for n")
         .SetAction(parameters =>
