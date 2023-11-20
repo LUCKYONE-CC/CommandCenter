@@ -39,7 +39,7 @@ NuGet\Install-Package CommandCenter
 
 ### 3. Add Parameters to command:
 ```csharp
-    commandProcessor.AddCommand(new CommandBuilder("dosome")
+    commandHandler.AddCommand(new CommandBuilder("dosome")
         .SetDescription("Description")
         .WithParameter("n", "Description for n")
         .SetAction(parameters =>
